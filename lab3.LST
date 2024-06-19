@@ -1,0 +1,1559 @@
+SQL> CREATE TABLE TERM_2090 (TermID CHAR(4) PRIMARY KEY, TermDesc VARCHAR2(11), StartDate DATE, EndDate DATE);
+CREATE TABLE TERM_2090 (TermID CHAR(4) PRIMARY KEY, TermDesc VARCHAR2(11), StartDate DATE, EndDate DATE)
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> Select * from tab;
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+AQ$DEF$_AQCALL                 VIEW                                             
+AQ$DEF$_AQERROR                VIEW                                             
+AQ$_DEF$_AQCALL_F              VIEW                                             
+AQ$_DEF$_AQERROR_F             VIEW                                             
+AQ$_INTERNET_AGENTS            TABLE                                            
+AQ$_INTERNET_AGENT_PRIVS       TABLE                                            
+AQ$_QUEUES                     TABLE                                            
+AQ$_QUEUE_TABLES               TABLE                                            
+AQ$_SCHEDULES                  TABLE                                            
+CATALOG                        SYNONYM                                          
+COL                            SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+COURSE_2090                    TABLE                                            
+CRSSECTION_2090                TABLE                                            
+DEF$_AQCALL                    TABLE                                            
+DEF$_AQERROR                   TABLE                                            
+DEF$_CALLDEST                  TABLE                                            
+DEF$_DEFAULTDEST               TABLE                                            
+DEF$_DESTINATION               TABLE                                            
+DEF$_ERROR                     TABLE                                            
+DEF$_LOB                       TABLE                                            
+DEF$_ORIGIN                    TABLE                                            
+DEF$_PROPAGATOR                TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+DEF$_PUSHED_TRANSACTIONS       TABLE                                            
+DEPARTMENT2090                 TABLE                                            
+EMPLOYEE                       TABLE                                            
+EMPLOYEE_TABLE                 TABLE                                            
+FACULTY2090                    TABLE                                            
+FACULTY_2090                   TABLE                                            
+HELP                           TABLE                                            
+LOCATION2090                   TABLE                                            
+LOCATION_2090                  TABLE                                            
+LOGMNRC_DBNAME_UID_MAP         TABLE                                            
+LOGMNRC_GSBA                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNRC_GSII                   TABLE                                            
+LOGMNRC_GTCS                   TABLE                                            
+LOGMNRC_GTLO                   TABLE                                            
+LOGMNRP_CTAS_PART_MAP          TABLE                                            
+LOGMNRT_MDDL$                  TABLE                                            
+LOGMNR_AGE_SPILL$              TABLE                                            
+LOGMNR_ATTRCOL$                TABLE                                            
+LOGMNR_ATTRIBUTE$              TABLE                                            
+LOGMNR_CCOL$                   TABLE                                            
+LOGMNR_CDEF$                   TABLE                                            
+LOGMNR_COL$                    TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_COLTYPE$                TABLE                                            
+LOGMNR_DICTIONARY$             TABLE                                            
+LOGMNR_DICTSTATE$              TABLE                                            
+LOGMNR_ENC$                    TABLE                                            
+LOGMNR_ERROR$                  TABLE                                            
+LOGMNR_FILTER$                 TABLE                                            
+LOGMNR_GLOBAL$                 TABLE                                            
+LOGMNR_GT_TAB_INCLUDE$         TABLE                                            
+LOGMNR_GT_USER_INCLUDE$        TABLE                                            
+LOGMNR_GT_XID_INCLUDE$         TABLE                                            
+LOGMNR_ICOL$                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_IND$                    TABLE                                            
+LOGMNR_INDCOMPART$             TABLE                                            
+LOGMNR_INDPART$                TABLE                                            
+LOGMNR_INDSUBPART$             TABLE                                            
+LOGMNR_INTEGRATED_SPILL$       TABLE                                            
+LOGMNR_KOPM$                   TABLE                                            
+LOGMNR_LOB$                    TABLE                                            
+LOGMNR_LOBFRAG$                TABLE                                            
+LOGMNR_LOG$                    TABLE                                            
+LOGMNR_LOGMNR_BUILDLOG         TABLE                                            
+LOGMNR_NTAB$                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_OBJ$                    TABLE                                            
+LOGMNR_OPQTYPE$                TABLE                                            
+LOGMNR_PARAMETER$              TABLE                                            
+LOGMNR_PARTOBJ$                TABLE                                            
+LOGMNR_PROCESSED_LOG$          TABLE                                            
+LOGMNR_PROPS$                  TABLE                                            
+LOGMNR_REFCON$                 TABLE                                            
+LOGMNR_RESTART_CKPT$           TABLE                                            
+LOGMNR_RESTART_CKPT_TXINFO$    TABLE                                            
+LOGMNR_SEED$                   TABLE                                            
+LOGMNR_SESSION$                TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_SESSION_ACTIONS$        TABLE                                            
+LOGMNR_SESSION_EVOLVE$         TABLE                                            
+LOGMNR_SPILL$                  TABLE                                            
+LOGMNR_SUBCOLTYPE$             TABLE                                            
+LOGMNR_TAB$                    TABLE                                            
+LOGMNR_TABCOMPART$             TABLE                                            
+LOGMNR_TABPART$                TABLE                                            
+LOGMNR_TABSUBPART$             TABLE                                            
+LOGMNR_TS$                     TABLE                                            
+LOGMNR_TYPE$                   TABLE                                            
+LOGMNR_UID$                    TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_USER$                   TABLE                                            
+LOGSTDBY$APPLY_MILESTONE       TABLE                                            
+LOGSTDBY$APPLY_PROGRESS        TABLE                                            
+LOGSTDBY$EDS_TABLES            TABLE                                            
+LOGSTDBY$EVENTS                TABLE                                            
+LOGSTDBY$FLASHBACK_SCN         TABLE                                            
+LOGSTDBY$HISTORY               TABLE                                            
+LOGSTDBY$PARAMETERS            TABLE                                            
+LOGSTDBY$PLSQL                 TABLE                                            
+LOGSTDBY$SCN                   TABLE                                            
+LOGSTDBY$SKIP                  TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGSTDBY$SKIP_SUPPORT          TABLE                                            
+LOGSTDBY$SKIP_TRANSACTION      TABLE                                            
+MAJOR2090                      TABLE                                            
+MAJOR_2090_NEW                 TABLE                                            
+MVIEW$_ADV_AJG                 TABLE                                            
+MVIEW$_ADV_BASETABLE           TABLE                                            
+MVIEW$_ADV_CLIQUE              TABLE                                            
+MVIEW$_ADV_ELIGIBLE            TABLE                                            
+MVIEW$_ADV_EXCEPTIONS          TABLE                                            
+MVIEW$_ADV_FILTER              TABLE                                            
+MVIEW$_ADV_FILTERINSTANCE      TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW$_ADV_FJG                 TABLE                                            
+MVIEW$_ADV_GC                  TABLE                                            
+MVIEW$_ADV_INFO                TABLE                                            
+MVIEW$_ADV_JOURNAL             TABLE                                            
+MVIEW$_ADV_LEVEL               TABLE                                            
+MVIEW$_ADV_LOG                 TABLE                                            
+MVIEW$_ADV_OUTPUT              TABLE                                            
+MVIEW$_ADV_PARAMETERS          TABLE                                            
+MVIEW$_ADV_PLAN                TABLE                                            
+MVIEW$_ADV_PRETTY              TABLE                                            
+MVIEW$_ADV_ROLLUP              TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW$_ADV_SQLDEPEND           TABLE                                            
+MVIEW$_ADV_TEMP                TABLE                                            
+MVIEW$_ADV_WORKLOAD            TABLE                                            
+MVIEW_EVALUATIONS              VIEW                                             
+MVIEW_EXCEPTIONS               VIEW                                             
+MVIEW_FILTER                   VIEW                                             
+MVIEW_FILTERINSTANCE           VIEW                                             
+MVIEW_LOG                      VIEW                                             
+MVIEW_RECOMMENDATIONS          VIEW                                             
+MVIEW_WORKLOAD                 VIEW                                             
+OL$                            TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+OL$HINTS                       TABLE                                            
+OL$NODES                       TABLE                                            
+PRODUCT_PRIVS                  VIEW                                             
+PRODUCT_USER_PROFILE           SYNONYM                                          
+PUBLICSYN                      SYNONYM                                          
+REPCAT$_AUDIT_ATTRIBUTE        TABLE                                            
+REPCAT$_AUDIT_COLUMN           TABLE                                            
+REPCAT$_COLUMN_GROUP           TABLE                                            
+REPCAT$_CONFLICT               TABLE                                            
+REPCAT$_DDL                    TABLE                                            
+REPCAT$_EXCEPTIONS             TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_EXTENSION              TABLE                                            
+REPCAT$_FLAVORS                TABLE                                            
+REPCAT$_FLAVOR_OBJECTS         TABLE                                            
+REPCAT$_GENERATED              TABLE                                            
+REPCAT$_GROUPED_COLUMN         TABLE                                            
+REPCAT$_INSTANTIATION_DDL      TABLE                                            
+REPCAT$_KEY_COLUMNS            TABLE                                            
+REPCAT$_OBJECT_PARMS           TABLE                                            
+REPCAT$_OBJECT_TYPES           TABLE                                            
+REPCAT$_PARAMETER_COLUMN       TABLE                                            
+REPCAT$_PRIORITY               TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_PRIORITY_GROUP         TABLE                                            
+REPCAT$_REFRESH_TEMPLATES      TABLE                                            
+REPCAT$_REPCAT                 TABLE                                            
+REPCAT$_REPCATLOG              TABLE                                            
+REPCAT$_REPCOLUMN              TABLE                                            
+REPCAT$_REPGROUP_PRIVS         TABLE                                            
+REPCAT$_REPOBJECT              TABLE                                            
+REPCAT$_REPPROP                TABLE                                            
+REPCAT$_REPSCHEMA              TABLE                                            
+REPCAT$_RESOLUTION             TABLE                                            
+REPCAT$_RESOLUTION_METHOD      TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_RESOLUTION_STATISTICS  TABLE                                            
+REPCAT$_RESOL_STATS_CONTROL    TABLE                                            
+REPCAT$_RUNTIME_PARMS          TABLE                                            
+REPCAT$_SITES_NEW              TABLE                                            
+REPCAT$_SITE_OBJECTS           TABLE                                            
+REPCAT$_SNAPGROUP              TABLE                                            
+REPCAT$_TEMPLATE_OBJECTS       TABLE                                            
+REPCAT$_TEMPLATE_PARMS         TABLE                                            
+REPCAT$_TEMPLATE_REFGROUPS     TABLE                                            
+REPCAT$_TEMPLATE_SITES         TABLE                                            
+REPCAT$_TEMPLATE_STATUS        TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_TEMPLATE_TARGETS       TABLE                                            
+REPCAT$_TEMPLATE_TYPES         TABLE                                            
+REPCAT$_USER_AUTHORIZATIONS    TABLE                                            
+REPCAT$_USER_PARM_VALUES       TABLE                                            
+ROOM2090                       TABLE                                            
+ROOM_2090                      TABLE                                            
+SQLPLUS_PRODUCT_PROFILE        TABLE                                            
+STUDENT                        TABLE                                            
+STUDENT_2090                   TABLE                                            
+SYSCATALOG                     SYNONYM                                          
+SYSFILES                       SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+TAB                            SYNONYM                                          
+TABQUOTAS                      SYNONYM                                          
+TERM2090                       TABLE                                            
+TERM_2090                      TABLE                                            
+
+191 rows selected.
+
+SQL> DROP TABLE TERM_2090;
+
+Table dropped.
+
+SQL> CREATE TABLE TERM_2090 (TermID CHAR(4) PRIMARY KEY, TermDesc VARCHAR2(11), StartDate DATE, EndDate DATE);
+
+Table created.
+
+SQL> CREATE TABLE ROOM_2090 (RoomType CHAR PRIMARY KEY, RoomDesc VARCHAR2(9));
+CREATE TABLE ROOM_2090 (RoomType CHAR PRIMARY KEY, RoomDesc VARCHAR2(9))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> DROP TABLE ROOM_2090;
+DROP TABLE ROOM_2090
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+SQL> Select * from tab
+  2  
+SQL> Select * from tab;
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+AQ$DEF$_AQCALL                 VIEW                                             
+AQ$DEF$_AQERROR                VIEW                                             
+AQ$_DEF$_AQCALL_F              VIEW                                             
+AQ$_DEF$_AQERROR_F             VIEW                                             
+AQ$_INTERNET_AGENTS            TABLE                                            
+AQ$_INTERNET_AGENT_PRIVS       TABLE                                            
+AQ$_QUEUES                     TABLE                                            
+AQ$_QUEUE_TABLES               TABLE                                            
+AQ$_SCHEDULES                  TABLE                                            
+CATALOG                        SYNONYM                                          
+COL                            SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+COURSE_2090                    TABLE                                            
+CRSSECTION_2090                TABLE                                            
+DEF$_AQCALL                    TABLE                                            
+DEF$_AQERROR                   TABLE                                            
+DEF$_CALLDEST                  TABLE                                            
+DEF$_DEFAULTDEST               TABLE                                            
+DEF$_DESTINATION               TABLE                                            
+DEF$_ERROR                     TABLE                                            
+DEF$_LOB                       TABLE                                            
+DEF$_ORIGIN                    TABLE                                            
+DEF$_PROPAGATOR                TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+DEF$_PUSHED_TRANSACTIONS       TABLE                                            
+DEPARTMENT2090                 TABLE                                            
+EMPLOYEE                       TABLE                                            
+EMPLOYEE_TABLE                 TABLE                                            
+FACULTY2090                    TABLE                                            
+FACULTY_2090                   TABLE                                            
+HELP                           TABLE                                            
+LOCATION2090                   TABLE                                            
+LOCATION_2090                  TABLE                                            
+LOGMNRC_DBNAME_UID_MAP         TABLE                                            
+LOGMNRC_GSBA                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNRC_GSII                   TABLE                                            
+LOGMNRC_GTCS                   TABLE                                            
+LOGMNRC_GTLO                   TABLE                                            
+LOGMNRP_CTAS_PART_MAP          TABLE                                            
+LOGMNRT_MDDL$                  TABLE                                            
+LOGMNR_AGE_SPILL$              TABLE                                            
+LOGMNR_ATTRCOL$                TABLE                                            
+LOGMNR_ATTRIBUTE$              TABLE                                            
+LOGMNR_CCOL$                   TABLE                                            
+LOGMNR_CDEF$                   TABLE                                            
+LOGMNR_COL$                    TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_COLTYPE$                TABLE                                            
+LOGMNR_DICTIONARY$             TABLE                                            
+LOGMNR_DICTSTATE$              TABLE                                            
+LOGMNR_ENC$                    TABLE                                            
+LOGMNR_ERROR$                  TABLE                                            
+LOGMNR_FILTER$                 TABLE                                            
+LOGMNR_GLOBAL$                 TABLE                                            
+LOGMNR_GT_TAB_INCLUDE$         TABLE                                            
+LOGMNR_GT_USER_INCLUDE$        TABLE                                            
+LOGMNR_GT_XID_INCLUDE$         TABLE                                            
+LOGMNR_ICOL$                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_IND$                    TABLE                                            
+LOGMNR_INDCOMPART$             TABLE                                            
+LOGMNR_INDPART$                TABLE                                            
+LOGMNR_INDSUBPART$             TABLE                                            
+LOGMNR_INTEGRATED_SPILL$       TABLE                                            
+LOGMNR_KOPM$                   TABLE                                            
+LOGMNR_LOB$                    TABLE                                            
+LOGMNR_LOBFRAG$                TABLE                                            
+LOGMNR_LOG$                    TABLE                                            
+LOGMNR_LOGMNR_BUILDLOG         TABLE                                            
+LOGMNR_NTAB$                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_OBJ$                    TABLE                                            
+LOGMNR_OPQTYPE$                TABLE                                            
+LOGMNR_PARAMETER$              TABLE                                            
+LOGMNR_PARTOBJ$                TABLE                                            
+LOGMNR_PROCESSED_LOG$          TABLE                                            
+LOGMNR_PROPS$                  TABLE                                            
+LOGMNR_REFCON$                 TABLE                                            
+LOGMNR_RESTART_CKPT$           TABLE                                            
+LOGMNR_RESTART_CKPT_TXINFO$    TABLE                                            
+LOGMNR_SEED$                   TABLE                                            
+LOGMNR_SESSION$                TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_SESSION_ACTIONS$        TABLE                                            
+LOGMNR_SESSION_EVOLVE$         TABLE                                            
+LOGMNR_SPILL$                  TABLE                                            
+LOGMNR_SUBCOLTYPE$             TABLE                                            
+LOGMNR_TAB$                    TABLE                                            
+LOGMNR_TABCOMPART$             TABLE                                            
+LOGMNR_TABPART$                TABLE                                            
+LOGMNR_TABSUBPART$             TABLE                                            
+LOGMNR_TS$                     TABLE                                            
+LOGMNR_TYPE$                   TABLE                                            
+LOGMNR_UID$                    TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_USER$                   TABLE                                            
+LOGSTDBY$APPLY_MILESTONE       TABLE                                            
+LOGSTDBY$APPLY_PROGRESS        TABLE                                            
+LOGSTDBY$EDS_TABLES            TABLE                                            
+LOGSTDBY$EVENTS                TABLE                                            
+LOGSTDBY$FLASHBACK_SCN         TABLE                                            
+LOGSTDBY$HISTORY               TABLE                                            
+LOGSTDBY$PARAMETERS            TABLE                                            
+LOGSTDBY$PLSQL                 TABLE                                            
+LOGSTDBY$SCN                   TABLE                                            
+LOGSTDBY$SKIP                  TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGSTDBY$SKIP_SUPPORT          TABLE                                            
+LOGSTDBY$SKIP_TRANSACTION      TABLE                                            
+MAJOR2090                      TABLE                                            
+MAJOR_2090_NEW                 TABLE                                            
+MVIEW$_ADV_AJG                 TABLE                                            
+MVIEW$_ADV_BASETABLE           TABLE                                            
+MVIEW$_ADV_CLIQUE              TABLE                                            
+MVIEW$_ADV_ELIGIBLE            TABLE                                            
+MVIEW$_ADV_EXCEPTIONS          TABLE                                            
+MVIEW$_ADV_FILTER              TABLE                                            
+MVIEW$_ADV_FILTERINSTANCE      TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW$_ADV_FJG                 TABLE                                            
+MVIEW$_ADV_GC                  TABLE                                            
+MVIEW$_ADV_INFO                TABLE                                            
+MVIEW$_ADV_JOURNAL             TABLE                                            
+MVIEW$_ADV_LEVEL               TABLE                                            
+MVIEW$_ADV_LOG                 TABLE                                            
+MVIEW$_ADV_OUTPUT              TABLE                                            
+MVIEW$_ADV_PARAMETERS          TABLE                                            
+MVIEW$_ADV_PLAN                TABLE                                            
+MVIEW$_ADV_PRETTY              TABLE                                            
+MVIEW$_ADV_ROLLUP              TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW$_ADV_SQLDEPEND           TABLE                                            
+MVIEW$_ADV_TEMP                TABLE                                            
+MVIEW$_ADV_WORKLOAD            TABLE                                            
+MVIEW_EVALUATIONS              VIEW                                             
+MVIEW_EXCEPTIONS               VIEW                                             
+MVIEW_FILTER                   VIEW                                             
+MVIEW_FILTERINSTANCE           VIEW                                             
+MVIEW_LOG                      VIEW                                             
+MVIEW_RECOMMENDATIONS          VIEW                                             
+MVIEW_WORKLOAD                 VIEW                                             
+OL$                            TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+OL$HINTS                       TABLE                                            
+OL$NODES                       TABLE                                            
+PRODUCT_PRIVS                  VIEW                                             
+PRODUCT_USER_PROFILE           SYNONYM                                          
+PUBLICSYN                      SYNONYM                                          
+REPCAT$_AUDIT_ATTRIBUTE        TABLE                                            
+REPCAT$_AUDIT_COLUMN           TABLE                                            
+REPCAT$_COLUMN_GROUP           TABLE                                            
+REPCAT$_CONFLICT               TABLE                                            
+REPCAT$_DDL                    TABLE                                            
+REPCAT$_EXCEPTIONS             TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_EXTENSION              TABLE                                            
+REPCAT$_FLAVORS                TABLE                                            
+REPCAT$_FLAVOR_OBJECTS         TABLE                                            
+REPCAT$_GENERATED              TABLE                                            
+REPCAT$_GROUPED_COLUMN         TABLE                                            
+REPCAT$_INSTANTIATION_DDL      TABLE                                            
+REPCAT$_KEY_COLUMNS            TABLE                                            
+REPCAT$_OBJECT_PARMS           TABLE                                            
+REPCAT$_OBJECT_TYPES           TABLE                                            
+REPCAT$_PARAMETER_COLUMN       TABLE                                            
+REPCAT$_PRIORITY               TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_PRIORITY_GROUP         TABLE                                            
+REPCAT$_REFRESH_TEMPLATES      TABLE                                            
+REPCAT$_REPCAT                 TABLE                                            
+REPCAT$_REPCATLOG              TABLE                                            
+REPCAT$_REPCOLUMN              TABLE                                            
+REPCAT$_REPGROUP_PRIVS         TABLE                                            
+REPCAT$_REPOBJECT              TABLE                                            
+REPCAT$_REPPROP                TABLE                                            
+REPCAT$_REPSCHEMA              TABLE                                            
+REPCAT$_RESOLUTION             TABLE                                            
+REPCAT$_RESOLUTION_METHOD      TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_RESOLUTION_STATISTICS  TABLE                                            
+REPCAT$_RESOL_STATS_CONTROL    TABLE                                            
+REPCAT$_RUNTIME_PARMS          TABLE                                            
+REPCAT$_SITES_NEW              TABLE                                            
+REPCAT$_SITE_OBJECTS           TABLE                                            
+REPCAT$_SNAPGROUP              TABLE                                            
+REPCAT$_TEMPLATE_OBJECTS       TABLE                                            
+REPCAT$_TEMPLATE_PARMS         TABLE                                            
+REPCAT$_TEMPLATE_REFGROUPS     TABLE                                            
+REPCAT$_TEMPLATE_SITES         TABLE                                            
+REPCAT$_TEMPLATE_STATUS        TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_TEMPLATE_TARGETS       TABLE                                            
+REPCAT$_TEMPLATE_TYPES         TABLE                                            
+REPCAT$_USER_AUTHORIZATIONS    TABLE                                            
+REPCAT$_USER_PARM_VALUES       TABLE                                            
+ROOM2090                       TABLE                                            
+ROOM_2090                      TABLE                                            
+SQLPLUS_PRODUCT_PROFILE        TABLE                                            
+STUDENT                        TABLE                                            
+STUDENT_2090                   TABLE                                            
+SYSCATALOG                     SYNONYM                                          
+SYSFILES                       SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+TAB                            SYNONYM                                          
+TABQUOTAS                      SYNONYM                                          
+TERM2090                       TABLE                                            
+TERM_2090                      TABLE                                            
+
+191 rows selected.
+
+SQL> CREATE TABLE ROOM2090 (RoomType CHAR PRIMARY KEY, RoomDesc VARCHAR2(9));
+CREATE TABLE ROOM2090 (RoomType CHAR PRIMARY KEY, RoomDesc VARCHAR2(9))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> CREATE TABLE ROOM__2090 (RoomType CHAR PRIMARY KEY, RoomDesc VARCHAR2(9));
+
+Table created.
+
+SQL> CREATE TABLE LOCATION__2090 (RoomID NUMBER(2) PRIMARY KEY, Building VARCHAR2(7) NOT NULL, RoomNo CHAR(3) NOT NULL UNIQUE, Capacity NUMBER(2) CHECK (Capacity > 0), RoomType CHAR, FOREIGN KEY (RoomType) REFERENCES ROOM_2090(RoomType));
+
+Table created.
+
+SQL> CREATE TABLE MAJOR__2090_new (MajorID NUMBER(3) PRIMARY KEY, MajorDesc VARCHAR2(25));
+
+Table created.
+
+SQL>  CREATE TABLE COURSE__2090 (CourseID VARCHAR2(6) PRIMARY KEY, Title VARCHAR2(20) UNIQUE, Credits NUMBER(1) CHECK (Credits >= 0 AND Credits <= 4), PreReq VARCHAR2(6) REFERENCES COURSE_2090(CourseID));
+
+Table created.
+
+SQL> CREATE TABLE MAJOR__2090 (MajorID NUMBER(3) PRIMARY KEY, MajorDesc VARCHAR2(25));
+
+Table created.
+
+SQL> CREATE TABLE DEPARTMENT__2090 (DeptID NUMBER(1) PRIMARY KEY, DeptName VARCHAR2(20));
+
+Table created.
+
+SQL> CREATE TABLE FACULTY__2090 (FacultyID NUMBER(3) PRIMARY KEY, Name VARCHAR2(15) NOT  NULL, RoomID NUMBER(2) REFERENCES LOCATION_2090(RoomID), Phone CHAR(3) UNIQUE, DeptID  NUMBER(1) REFERENCES DEPARTMENT_2090(DeptID));
+CREATE TABLE FACULTY__2090 (FacultyID NUMBER(3) PRIMARY KEY, Name VARCHAR2(15) NOT  NULL, RoomID NUMBER(2) REFERENCES LOCATION_2090(RoomID), Phone CHAR(3) UNIQUE, DeptID  NUMBER(1) REFERENCES DEPARTMENT_2090(DeptID))
+                                                                                                                                                                                                *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> CREATE TABLE FACULTY__2090 (FacultyID NUMBER(3) PRIMARY KEY, Name VARCHAR2(15) NOT  NULL, RoomID NUMBER(2) REFERENCES LOCATION__2090(RoomID), Phone CHAR(3) UNIQUE, DeptID  NUMBER(1) REFERENCES DEPARTMENT__2090(DeptID));
+
+Table created.
+
+SQL> CREATE TABLE CRSSECTION__2090 (CsID NUMBER(4) PRIMARY KEY, CourseID VARCHAR2(6) REFERENCES COURSE__2090(CourseID) NOT NULL, Section CHAR(2) NOT NULL, TermID CHAR(4) REFERENCES TERM__2090(TermID) NOT NULL, FacultyID NUMBER(3) REFERENCES FACULTY__2090(FacultyID), Day VARCHAR2(2), StartTime VARCHAR2(5), EndTime VARCHAR2(5), RoomID NUMBER(2) REFERENCES LOCATION__2090(RoomID), MaxCount NUMBER(2) CHECK (MaxCount > 0));
+CREATE TABLE CRSSECTION__2090 (CsID NUMBER(4) PRIMARY KEY, CourseID VARCHAR2(6) REFERENCES COURSE__2090(CourseID) NOT NULL, Section CHAR(2) NOT NULL, TermID CHAR(4) REFERENCES TERM__2090(TermID) NOT NULL, FacultyID NUMBER(3) REFERENCES FACULTY__2090(FacultyID), Day VARCHAR2(2), StartTime VARCHAR2(5), EndTime VARCHAR2(5), RoomID NUMBER(2) REFERENCES LOCATION__2090(RoomID), MaxCount NUMBER(2) CHECK (MaxCount > 0))
+                                                                                                                                                                                *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> CREATE TABLE CRSSECTION__2090 (CsID NUMBER(4) PRIMARY KEY, CourseID VARCHAR2(6) REFERENCES COURSE__2090(CourseID) NOT NULL, Section CHAR(2) NOT NULL, TermID CHAR(4) REFERENCES TERM_2090(TermID) NOT NULL, FacultyID NUMBER(3) REFERENCES FACULTY__2090(FacultyID), Day VARCHAR2(2), StartTime VARCHAR2(5), EndTime VARCHAR2(5), RoomID NUMBER(2) REFERENCES LOCATION__2090(RoomID), MaxCount NUMBER(2) CHECK (MaxCount > 0));
+
+Table created.
+
+SQL>  CREATE TABLE STUDENT__2090 (StudentID CHAR(5) PRIMARY KEY, Last VARCHAR2(15) NOT NULL, First VARCHAR2(15) NOT NULL, Street VARCHAR2(25), City VARCHAR2(15), State VARCHAR(2) DEFAULT 'NJ', Zip VARCHAR(5), StartTerm CHAR(4) REFERENCES TERM_2090(TermID), Birthday DATE, FacultyID NUMBER(3) REFERENCES FACULTY__2090(FacultyID), MajorID NUMBER(3) REFERENCES MAJOR__2090(MajorID), Phone CHAR(10));
+
+Table created.
+
+SQL>  CREATE TABLE REGESTRATION__2090 (StudentID CHAR(5), CsID NUMBER(4), PRIMARY KEY (StudentID, CsID), FOREIGN KEY (StudentID) REFERENCES STUDENT__2090(StudentID), FOREIGN KEY (CsID)  REFERENCES CRSSECTION__2090(CsID), Midterm CHAR CHECK (Midterm IN ('A', 'B', 'C', 'D', 'F', 'W')), Final CHAR CHECK (Final IN ('A', 'B', 'C', 'D', 'I', 'F', 'W')), RegStatus CHAR CHECK (RegStatus IN ('X', 'R', 'W')));
+
+Table created.
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('EN100', 'Basic English', 0, NULL);
+
+1 row created.
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, 'EN100');
+INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, 'EN100')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008216) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, 'EN100');
+INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, 'EN100')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008216) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, 'EN109');
+INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, 'EN109')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008216) violated - parent key not 
+found 
+
+
+SQL>  CREATE TABLE COURSE__2090 (CourseID VARCHAR2(6) PRIMARY KEY, Title VARCHAR2(20) UNIQUE, Credits NUMBER(1) CHECK (Credits >= 0 AND Credits
+  2  <= 4), PreReq VARCHAR2(6) REFERENCES COURSE__2090(CourseID));
+ CREATE TABLE COURSE__2090 (CourseID VARCHAR2(6) PRIMARY KEY, Title VARCHAR2(20) UNIQUE, Credits NUMBER(1) CHECK (Credits >= 0 AND Credits
+              *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('CIS253', 'Database Systems', 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('CIS265', 'Systems Analysis', 3, 'CIS253');
+INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('CIS265', 'Systems Analysis', 3, 'CIS253')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008216) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('CIS265', 'Systems Analysis', 3, 'NULL');
+INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('CIS265', 'Systems Analysis', 3, 'NULL')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008216) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('CIS265', 'Systems Analysis', 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO COURSE_2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO COURSE_2090 (CourseID, Title, Credits, PreReq) VALUES ('MA150', 'College Algebra', 3, NULL);
+
+1 row created.
+
+SQL>  INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('AC101', 'Accounting', 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('MA150', 'College Algebra', 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO COURSE__2090 (CourseID, Title, Credits, PreReq) VALUES ('LA123', 'English Literature', 3, NULL);
+
+1 row created.
+
+SQL> INSERT INTO ROOM__2090 (RoomType, RoomDesc) VALUES ('L', 'Lab');
+
+1 row created.
+
+SQL> INSERT INTO ROOM__2090 (RoomType, RoomDesc) VALUES ('C', 'Classroom');
+
+1 row created.
+
+SQL> INSERT INTO ROOM__2090 (RoomType, RoomDesc) VALUES ('O', 'Office');
+
+1 row created.
+
+SQL> SELECT * FROM COURSE__2090;
+
+COURSE TITLE                   CREDITS PREREQ                                   
+------ -------------------- ---------- ------                                   
+EN100  Basic English                 0                                          
+CIS253 Database Systems              3                                          
+CIS265 Systems Analysis              3                                          
+AC101  Accounting                    3                                          
+MA150  College Algebra               3                                          
+LA123  English Literature            3                                          
+
+6 rows selected.
+
+SQL> SELECT * FROM ROOM__2090;
+
+R ROOMDESC                                                                      
+- ---------                                                                     
+L Lab                                                                           
+C Classroom                                                                     
+O Office                                                                        
+
+SQL>  INSERT INTO TERM_2090 (TermID, TermDesc, StartDate, EndDate) VALUES ('SP02', 'Spring 2002', TO_DATE('28-APR-02', 'DD-MON-YY'), TO_DATE('16-AUG-02', 'DD-MON-YY'));
+
+1 row created.
+
+SQL>  INSERT INTO TERM_2090 (TermID, TermDesc, StartDate, EndDate) VALUES ('FL02', 'Fall 2002', TO_DATE('08-SEP-02', 'DD-MON-YY'), TO_DATE('20-DEC-02', 'DD-MON-YY'));
+
+1 row created.
+
+SQL> INSERT INTO TERM_2090 (TermID, TermDesc, StartDate, EndDate) VALUES ('WN03', 'Winter 2003', TO_DATE('05-JAN-03', 'DD-MON-YY'), TO_DATE('18-APR-03', 'DD-MON-YY'));
+
+1 row created.
+
+SQL>  INSERT INTO TERM_2090 (TermID, TermDesc, StartDate, EndDate) VALUES ('SP03', 'Spring 2003', TO_DATE('27-APR-03', 'DD-MON-YY'), TO_DATE('15-AUG-03', 'DD-MON-YY'));
+
+1 row created.
+
+SQL>  INSERT INTO TERM_2090 (TermID, TermDesc, StartDate, EndDate) VALUES ('FL03', 'Fall 2003', TO_DATE('07-SEP-03', 'DD-MON-YY'), TO_DATE('19-DEC-03', 'DD-MON-YY'));
+
+1 row created.
+
+SQL> SELECT * FROM TERM_2090;
+
+TERM TERMDESC    STARTDATE ENDDATE                                              
+---- ----------- --------- ---------                                            
+SP02 Spring 2002 28-APR-02 16-AUG-02                                            
+FL02 Fall 2002   08-SEP-02 20-DEC-02                                            
+WN03 Winter 2003 05-JAN-03 18-APR-03                                            
+SP03 Spring 2003 27-APR-03 15-AUG-03                                            
+FL03 Fall 2003   07-SEP-03 19-DEC-03                                            
+
+SQL> INSERT INTO MAJOR__2090 (MajorID, MajorDesc) VALUES (100, 'AAS-Accounting');
+
+1 row created.
+
+SQL> INSERT INTO MAJOR__2090 (MajorID, MajorDesc) VALUES (200, 'AAS-Computer Science');
+
+1 row created.
+
+SQL>  INSERT INTO MAJOR__2090 (MajorID, MajorDesc) VALUES (300, 'AAS-Telecommunications');
+
+1 row created.
+
+SQL>  INSERT INTO MAJOR__2090 (MajorID, MajorDesc) VALUES (400, 'BS-Accounting');
+
+1 row created.
+
+SQL>  INSERT INTO MAJOR__2090 (MajorID, MajorDesc) VALUES (500, 'BS-Computer Science');
+
+1 row created.
+
+SQL> INSERT INTO MAJOR__2090 (MajorID, MajorDesc) VALUES (600, 'BS-Telecommunications');
+
+1 row created.
+
+SQL>  SELECT * FROM MAJOR__2090;
+
+   MAJORID MAJORDESC                                                            
+---------- -------------------------                                            
+       100 AAS-Accounting                                                       
+       200 AAS-Computer Science                                                 
+       300 AAS-Telecommunications                                               
+       400 BS-Accounting                                                        
+       500 BS-Computer Science                                                  
+       600 BS-Telecommunications                                                
+
+6 rows selected.
+
+SQL>  ALTER TABLE DEPARTMENT__2090 ADD (FacultyID NUMBER(3) REFERENCES FACULTY_2090(FacultyID));
+
+Table altered.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (11, 'Gandhi', '101', 2, 'O');
+ INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (11, 'Gandhi', '101', 2, 'O')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008211) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (12,'Gandhi', '103', 2, 'O');
+INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (12,'Gandhi', '103', 2, 'O')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008211) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (12,'Gandhi', '103', 2, NULL);
+
+1 row created.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (11, 'Gandhi', '101', 2, NULL);
+
+1 row created.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (13, 'Kennedy', '202', 35, 'L');
+ INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (13, 'Kennedy', '202', 35, 'L')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008211) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (13, 'Kennedy', '202', 35, NULL);
+
+1 row created.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (14,'Kennedy', '204', 50, NULL);
+
+1 row created.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (15,'Nehru', '301', 50, NULL);
+
+1 row created.
+
+SQL> INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (16,'Nehru', '309', 45,NULL);
+
+1 row created.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (17,'Gandhi', '105', 2, NULL);
+
+1 row created.
+
+SQL> INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (18, 'Kennedy', '206', 40,NULL);
+
+1 row created.
+
+SQL>  INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (19,'Kennedy', '210', 30, NULL);
+
+1 row created.
+
+SQL> INSERT INTO LOCATION__2090 (RoomId, Building, RoomNo, Capacity, RoomType) VALUES (20, 'Gandhi', '107', 2,NULL);
+
+1 row created.
+
+SQL>  SELECT * FROM LOCATION__2090;
+
+    ROOMID BUILDIN ROO   CAPACITY R                                             
+---------- ------- --- ---------- -                                             
+        12 Gandhi  103          2                                               
+        11 Gandhi  101          2                                               
+        13 Kennedy 202         35                                               
+        14 Kennedy 204         50                                               
+        15 Nehru   301         50                                               
+        16 Nehru   309         45                                               
+        17 Gandhi  105          2                                               
+        18 Kennedy 206         40                                               
+        19 Kennedy 210         30                                               
+        20 Gandhi  107          2                                               
+
+10 rows selected.
+
+SQL> INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (1, 'Computer Science', 111);
+INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (1, 'Computer Science', 111)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008245) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (1, 'Computer Science',NULL);
+
+1 row created.
+
+SQL>  INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (235, 'Vajpayee', 12, '577');
+
+1 row created.
+
+SQL> INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (2, 'Telecommunications',NULL);
+
+1 row created.
+
+SQL>  INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (3, 'Accounting',NULL);
+
+1 row created.
+
+SQL> INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (4, 'Math and Science',NULL);
+
+1 row created.
+
+SQL>  INSERT INTO DEPARTMENT__2090 (DeptId, DeptName, FacultyId) VALUES (5, 'Liberal Arts',NULL);
+
+1 row created.
+
+SQL>  INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (111, 'Jones', 11, '525');
+
+1 row created.
+
+SQL> INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (222, 'Williams', 20, '533');
+
+1 row created.
+
+SQL>  INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (123, 'Mobley', 11, '529');
+
+1 row created.
+
+SQL> INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (345, 'Sen', 12, '579');
+
+1 row created.
+
+SQL> INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (444, 'Rivera', '21');
+INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (444, 'Rivera', '21')
+                                                           *
+ERROR at line 1:
+ORA-00947: not enough values 
+
+
+SQL> INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (444, 'Rivera',21,'123');
+INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (444, 'Rivera',21,'123')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008222) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (555, 'Chang', 17,'188');
+
+1 row created.
+
+SQL>  INSERT INTO FACULTY__2090 (FacultyId, Name, RoomId, Phone) VALUES (333, 'Collins', 17,'111');
+
+1 row created.
+
+SQL>  UPDATE FACULTY__2090 SET DeptId = 1 WHERE FacultyId IN (111, 123);
+
+2 rows updated.
+
+SQL>  UPDATE FACULTY__2090 SET DeptId = 2 WHERE FacultyId IN (222, 235);
+
+2 rows updated.
+
+SQL>  UPDATE FACULTY__2090 SET DeptId = 3 WHERE FacultyId IN (333, 345);
+
+2 rows updated.
+
+SQL>  UPDATE FACULTY__2090 SET DeptId = 3 WHERE FacultyId IN (333, 345);
+
+2 rows updated.
+
+SQL>  UPDATE FACULTY__2090 SET DeptId = 5 WHERE FacultyId = 555;
+
+1 row updated.
+
+SQL> UPDATE FACULTY__2090 SET DeptId = 4 WHERE FacultyId = 444;
+
+0 rows updated.
+
+SQL> SELECT * FROM DEPARTMENT__2090;
+
+    DEPTID DEPTNAME              FACULTYID                                      
+---------- -------------------- ----------                                      
+         1 Computer Science                                                     
+         2 Telecommunications                                                   
+         3 Accounting                                                           
+         4 Math and Science                                                     
+         5 Liberal Arts                                                         
+
+SQL>  SELECT * FROM FACULTY__2090;
+
+ FACULTYID NAME                ROOMID PHO     DEPTID                            
+---------- --------------- ---------- --- ----------                            
+       235 Vajpayee                12 577          2                            
+       111 Jones                   11 525          1                            
+       222 Williams                20 533          2                            
+       123 Mobley                  11 529          1                            
+       345 Sen                     12 579          3                            
+       555 Chang                   17 188          5                            
+       333 Collins                 17 111          3                            
+
+7 rows selected.
+
+SQL> INSERT INTO STUDENT__2090 (StudentID, Last, First, Street, City, State, Zip, StartTerm, Birthday, FacultyID, MajorID, Phone) VALUES ('00100', 'Tyler', 'Micky', '1 Ford Avenue #7', 'Hill', 'NJ', '08863', 'WN03', TO_DATE('02/12/1983', 'MM/DD/YYYY'), 123, 100, '9735551111');
+
+1 row created.
+
+SQL>  INSERT INTO STUDENT__2090 (StudentID, Last, First, Street, City, State, Zip, StartTerm, Birthday, FacultyID, MajorID, Phone) VALUES ('00101', 'Diaz', 'Jose', '12 Morris Avenue ', 'Bronx', 'NY', '10468', 'SP03', TO_DATE('03/18/1984', 'MM/DD/YYYY'), 555, 500, '718555');
+
+1 row created.
+
+SQL>  INSERT INTO STUDENT__2090 (StudentID, Last, First, Street, City, State, Zip, StartTerm, Birthday, FacultyID, MajorID, Phone) VALUES ('00102', 'Patel', 'Rajesh', '25 River Road #3', 'Edison', 'NJ', '08837', 'WN03', TO_DATE('12/12/1985', 'MM/DD/YYYY'), 111, 400, '7325553333');
+
+1 row created.
+
+SQL> INSERT INTO STUDENT_2090 (StudentID, Last, First, Street, City, State, Zip, StartTerm, Birthday, FacultyID, MajorID, Phone) VALUES ('00103', 'Rickles', 'Deborah', '100 Main Street', 'Iselin', 'NJ', '08838', 'FL02', TO_DATE('10/20/1970', 'MM/DD/YYYY'), 555, 500,'7325554444');
+
+1 row created.
+
+SQL>  INSERT INTO STUDENT__2090 (StudentID, Last, First, Street, City, State, Zip, StartTerm, Birthday, FacultyID, MajorID, Phone) VALUES ('00104', 'Lee', 'Brian', '2845 First Lane', 'Hope', 'NY', '11373', 'WN03', TO_DATE('11/28/1985', 'MM/DD/YYYY'), 345, 600, '2125555555');
+
+1 row created.
+
+SQL>  INSERT INTO STUDENT__2090 (StudentID, Last, First, Street, City, State, Zip, StartTerm, Birthday, FacultyID, MajorID, Phone) VALUES ('00105', 'Khan', 'Amir', '213 Broadway', 'Clifton', 'NJ', '07222', 'WN03', TO_DATE('07/07/1984', 'MM/DD/YYYY'), 222, 200, '2015556666');
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1101, 'CIS265', '01', 'WN03', 111, 'MW', '09:00', '10:30', 13, 30);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1102, 'CIS253', '01', 'WN03', 123, 'TR', '09:00', '10:30', 18, 40);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1103, 'MA150', '02', 'WN03', 444, 'F', '09:00', '12:00', 15, 25);
+ INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1103, 'MA150', '02', 'WN03', 444, 'F', '09:00', '12:00', 15, 25)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008231) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1103, 'MA150', '02', 'WN03', 444, 'FC', '09:00', '12:00', 15, 25);
+ INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1103, 'MA150', '02', 'WN03', 444, 'FC', '09:00', '12:00', 15, 25)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008231) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1104, 'AC101', '10', 'WN03', 345, 'MW', '10:30', '12:00', 16, 35);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1205, 'CIS265', '01', 'SP03', NULL, 'MW', '09:00', '10:30', 14, 35);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount)  VALUES (1206, 'CIS265', '02', 'SP03', 111, 'TR', '09:00', '10:30', 18, 30);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1207, 'LA123', '05', 'SP03', NULL, 'MW', '09:00', '10:30', 15, 30);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1208, 'CIS253', '21', 'SP03', 123, 'TR', '09:00', '10:30', 14, 40);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1209, 'CIS253', '11', 'SP03', 111, 'MW', '09:00', '10:30', 18, 40);
+
+1 row created.
+
+SQL>  INSERT INTO CRSSECTION__2090 (CsID, CourseID, Section, TermID, FacultyID, Day, StartTime, EndTime, RoomID, MaxCount) VALUES (1210, 'CIS253', '31', 'SP03', 123, 'F', 'TBA', 'TBA', 19, 2);
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00100', 1103, 'C', 'F', 'R');
+ INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00100', 1103, 'C', 'F', 'R')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008244) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00100', 1102, 'B', 'B', 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus)  VALUES ('00100', 1104, 'B', 'A', 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00102', 1102, 'F', 'D', 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus)  VALUES ('00102', 1103, 'A', 'A', 'R');
+ INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus)  VALUES ('00102', 1103, 'A', 'A', 'R')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008244) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus)  VALUES ('00102', 1103, 'A', 'A', 'R');
+ INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus)  VALUES ('00102', 1103, 'A', 'A', 'R')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008244) violated - parent key not 
+found 
+
+
+SQL>   INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00103', 1101, 'F', 'W', 'W');
+  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00103', 1101, 'F', 'W', 'W')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008243) violated - parent key not 
+found 
+
+
+SQL>   INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00103', 1104, 'D', 'D', 'R');
+  INSERT INTO REGESTRATION__2090 (StudentID, CsID, Midterm, Final, RegStatus) VALUES ('00103', 1104, 'D', 'D', 'R')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008243) violated - parent key not 
+found 
+
+
+SQL> INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00100', 1207, 'X');
+
+1 row created.
+
+SQL> INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00103', 1206, 'W');
+INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00103', 1206, 'W')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.SYS_C008243) violated - parent key not 
+found 
+
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00104', 1206, 'X');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00104', 1207, 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00104', 1210, 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00105', 1208, 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00105', 1209, 'X');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00102', 1210, 'R');
+
+1 row created.
+
+SQL> INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00102', 1207, 'R');
+
+1 row created.
+
+SQL>  INSERT INTO REGESTRATION__2090 (StudentID, CsID, RegStatus) VALUES ('00102', 1206, 'X');
+
+1 row created.
+
+SQL>  SELECT * FROM COURSE__2090;
+
+COURSE TITLE                   CREDITS PREREQ                                   
+------ -------------------- ---------- ------                                   
+EN100  Basic English                 0                                          
+CIS253 Database Systems              3                                          
+CIS265 Systems Analysis              3                                          
+AC101  Accounting                    3                                          
+MA150  College Algebra               3                                          
+LA123  English Literature            3                                          
+
+6 rows selected.
+
+SQL>  SELECT * FROM ROOM__2090;
+
+R ROOMDESC                                                                      
+- ---------                                                                     
+L Lab                                                                           
+C Classroom                                                                     
+O Office                                                                        
+
+SQL>  SELECT * FROM TERM_2090;
+
+TERM TERMDESC    STARTDATE ENDDATE                                              
+---- ----------- --------- ---------                                            
+SP02 Spring 2002 28-APR-02 16-AUG-02                                            
+FL02 Fall 2002   08-SEP-02 20-DEC-02                                            
+WN03 Winter 2003 05-JAN-03 18-APR-03                                            
+SP03 Spring 2003 27-APR-03 15-AUG-03                                            
+FL03 Fall 2003   07-SEP-03 19-DEC-03                                            
+
+SQL>  SELECT * FROM MAJOR__2090;
+
+   MAJORID MAJORDESC                                                            
+---------- -------------------------                                            
+       100 AAS-Accounting                                                       
+       200 AAS-Computer Science                                                 
+       300 AAS-Telecommunications                                               
+       400 BS-Accounting                                                        
+       500 BS-Computer Science                                                  
+       600 BS-Telecommunications                                                
+
+6 rows selected.
+
+SQL>  SELECT * FROM DEPARTMENT__2090;
+
+    DEPTID DEPTNAME              FACULTYID                                      
+---------- -------------------- ----------                                      
+         1 Computer Science                                                     
+         2 Telecommunications                                                   
+         3 Accounting                                                           
+         4 Math and Science                                                     
+         5 Liberal Arts                                                         
+
+SQL> SELECT * FROM LOCATION__2090;
+
+    ROOMID BUILDIN ROO   CAPACITY R                                             
+---------- ------- --- ---------- -                                             
+        12 Gandhi  103          2                                               
+        11 Gandhi  101          2                                               
+        13 Kennedy 202         35                                               
+        14 Kennedy 204         50                                               
+        15 Nehru   301         50                                               
+        16 Nehru   309         45                                               
+        17 Gandhi  105          2                                               
+        18 Kennedy 206         40                                               
+        19 Kennedy 210         30                                               
+        20 Gandhi  107          2                                               
+
+10 rows selected.
+
+SQL>  SELECT * FROM FACULTY__2090;
+
+ FACULTYID NAME                ROOMID PHO     DEPTID                            
+---------- --------------- ---------- --- ----------                            
+       235 Vajpayee                12 577          2                            
+       111 Jones                   11 525          1                            
+       222 Williams                20 533          2                            
+       123 Mobley                  11 529          1                            
+       345 Sen                     12 579          3                            
+       555 Chang                   17 188          5                            
+       333 Collins                 17 111          3                            
+
+7 rows selected.
+
+SQL> SELECT * FROM STUDENT__2090;
+
+STUDE LAST            FIRST           STREET                    CITY            
+----- --------------- --------------- ------------------------- --------------- 
+ST ZIP   STAR BIRTHDAY   FACULTYID    MAJORID PHONE                             
+-- ----- ---- --------- ---------- ---------- ----------                        
+00100 Tyler           Micky           1 Ford Avenue #7          Hill            
+NJ 08863 WN03 12-FEB-83        123        100 9735551111                        
+                                                                                
+00101 Diaz            Jose            12 Morris Avenue          Bronx           
+NY 10468 SP03 18-MAR-84        555        500 718555                            
+                                                                                
+00102 Patel           Rajesh          25 River Road #3          Edison          
+NJ 08837 WN03 12-DEC-85        111        400 7325553333                        
+                                                                                
+
+STUDE LAST            FIRST           STREET                    CITY            
+----- --------------- --------------- ------------------------- --------------- 
+ST ZIP   STAR BIRTHDAY   FACULTYID    MAJORID PHONE                             
+-- ----- ---- --------- ---------- ---------- ----------                        
+00104 Lee             Brian           2845 First Lane           Hope            
+NY 11373 WN03 28-NOV-85        345        600 2125555555                        
+                                                                                
+00105 Khan            Amir            213 Broadway              Clifton         
+NJ 07222 WN03 07-JUL-84        222        200 2015556666                        
+                                                                                
+
+SQL>  SELECT * FROM CRSSECTION__2090;
+
+      CSID COURSE SE TERM  FACULTYID DA START ENDTI     ROOMID   MAXCOUNT       
+---------- ------ -- ---- ---------- -- ----- ----- ---------- ----------       
+      1101 CIS265 01 WN03        111 MW 09:00 10:30         13         30       
+      1102 CIS253 01 WN03        123 TR 09:00 10:30         18         40       
+      1104 AC101  10 WN03        345 MW 10:30 12:00         16         35       
+      1205 CIS265 01 SP03            MW 09:00 10:30         14         35       
+      1206 CIS265 02 SP03        111 TR 09:00 10:30         18         30       
+      1207 LA123  05 SP03            MW 09:00 10:30         15         30       
+      1208 CIS253 21 SP03        123 TR 09:00 10:30         14         40       
+      1209 CIS253 11 SP03        111 MW 09:00 10:30         18         40       
+      1210 CIS253 31 SP03        123 F  TBA   TBA           19          2       
+
+9 rows selected.
+
+SQL> SELECT * FROM REGESTRATION__2090;
+
+STUDE       CSID M F R                                                          
+----- ---------- - - -                                                          
+00100       1102 B B R                                                          
+00100       1104 B A R                                                          
+00102       1102 F D R                                                          
+00100       1207     X                                                          
+00104       1206     X                                                          
+00104       1207     R                                                          
+00104       1210     R                                                          
+00105       1208     R                                                          
+00105       1209     X                                                          
+00102       1210     R                                                          
+00102       1207     R                                                          
+
+STUDE       CSID M F R                                                          
+----- ---------- - - -                                                          
+00102       1206     X                                                          
+
+12 rows selected.
+
+SQL> SELECT * FROM TAB;
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+AQ$DEF$_AQCALL                 VIEW                                             
+AQ$DEF$_AQERROR                VIEW                                             
+AQ$_DEF$_AQCALL_F              VIEW                                             
+AQ$_DEF$_AQERROR_F             VIEW                                             
+AQ$_INTERNET_AGENTS            TABLE                                            
+AQ$_INTERNET_AGENT_PRIVS       TABLE                                            
+AQ$_QUEUES                     TABLE                                            
+AQ$_QUEUE_TABLES               TABLE                                            
+AQ$_SCHEDULES                  TABLE                                            
+CATALOG                        SYNONYM                                          
+COL                            SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+COURSE_2090                    TABLE                                            
+COURSE__2090                   TABLE                                            
+CRSSECTION_2090                TABLE                                            
+CRSSECTION__2090               TABLE                                            
+DEF$_AQCALL                    TABLE                                            
+DEF$_AQERROR                   TABLE                                            
+DEF$_CALLDEST                  TABLE                                            
+DEF$_DEFAULTDEST               TABLE                                            
+DEF$_DESTINATION               TABLE                                            
+DEF$_ERROR                     TABLE                                            
+DEF$_LOB                       TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+DEF$_ORIGIN                    TABLE                                            
+DEF$_PROPAGATOR                TABLE                                            
+DEF$_PUSHED_TRANSACTIONS       TABLE                                            
+DEPARTMENT2090                 TABLE                                            
+DEPARTMENT__2090               TABLE                                            
+EMPLOYEE                       TABLE                                            
+EMPLOYEE_TABLE                 TABLE                                            
+FACULTY2090                    TABLE                                            
+FACULTY_2090                   TABLE                                            
+FACULTY__2090                  TABLE                                            
+HELP                           TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOCATION2090                   TABLE                                            
+LOCATION_2090                  TABLE                                            
+LOCATION__2090                 TABLE                                            
+LOGMNRC_DBNAME_UID_MAP         TABLE                                            
+LOGMNRC_GSBA                   TABLE                                            
+LOGMNRC_GSII                   TABLE                                            
+LOGMNRC_GTCS                   TABLE                                            
+LOGMNRC_GTLO                   TABLE                                            
+LOGMNRP_CTAS_PART_MAP          TABLE                                            
+LOGMNRT_MDDL$                  TABLE                                            
+LOGMNR_AGE_SPILL$              TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_ATTRCOL$                TABLE                                            
+LOGMNR_ATTRIBUTE$              TABLE                                            
+LOGMNR_CCOL$                   TABLE                                            
+LOGMNR_CDEF$                   TABLE                                            
+LOGMNR_COL$                    TABLE                                            
+LOGMNR_COLTYPE$                TABLE                                            
+LOGMNR_DICTIONARY$             TABLE                                            
+LOGMNR_DICTSTATE$              TABLE                                            
+LOGMNR_ENC$                    TABLE                                            
+LOGMNR_ERROR$                  TABLE                                            
+LOGMNR_FILTER$                 TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_GLOBAL$                 TABLE                                            
+LOGMNR_GT_TAB_INCLUDE$         TABLE                                            
+LOGMNR_GT_USER_INCLUDE$        TABLE                                            
+LOGMNR_GT_XID_INCLUDE$         TABLE                                            
+LOGMNR_ICOL$                   TABLE                                            
+LOGMNR_IND$                    TABLE                                            
+LOGMNR_INDCOMPART$             TABLE                                            
+LOGMNR_INDPART$                TABLE                                            
+LOGMNR_INDSUBPART$             TABLE                                            
+LOGMNR_INTEGRATED_SPILL$       TABLE                                            
+LOGMNR_KOPM$                   TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_LOB$                    TABLE                                            
+LOGMNR_LOBFRAG$                TABLE                                            
+LOGMNR_LOG$                    TABLE                                            
+LOGMNR_LOGMNR_BUILDLOG         TABLE                                            
+LOGMNR_NTAB$                   TABLE                                            
+LOGMNR_OBJ$                    TABLE                                            
+LOGMNR_OPQTYPE$                TABLE                                            
+LOGMNR_PARAMETER$              TABLE                                            
+LOGMNR_PARTOBJ$                TABLE                                            
+LOGMNR_PROCESSED_LOG$          TABLE                                            
+LOGMNR_PROPS$                  TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_REFCON$                 TABLE                                            
+LOGMNR_RESTART_CKPT$           TABLE                                            
+LOGMNR_RESTART_CKPT_TXINFO$    TABLE                                            
+LOGMNR_SEED$                   TABLE                                            
+LOGMNR_SESSION$                TABLE                                            
+LOGMNR_SESSION_ACTIONS$        TABLE                                            
+LOGMNR_SESSION_EVOLVE$         TABLE                                            
+LOGMNR_SPILL$                  TABLE                                            
+LOGMNR_SUBCOLTYPE$             TABLE                                            
+LOGMNR_TAB$                    TABLE                                            
+LOGMNR_TABCOMPART$             TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGMNR_TABPART$                TABLE                                            
+LOGMNR_TABSUBPART$             TABLE                                            
+LOGMNR_TS$                     TABLE                                            
+LOGMNR_TYPE$                   TABLE                                            
+LOGMNR_UID$                    TABLE                                            
+LOGMNR_USER$                   TABLE                                            
+LOGSTDBY$APPLY_MILESTONE       TABLE                                            
+LOGSTDBY$APPLY_PROGRESS        TABLE                                            
+LOGSTDBY$EDS_TABLES            TABLE                                            
+LOGSTDBY$EVENTS                TABLE                                            
+LOGSTDBY$FLASHBACK_SCN         TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+LOGSTDBY$HISTORY               TABLE                                            
+LOGSTDBY$PARAMETERS            TABLE                                            
+LOGSTDBY$PLSQL                 TABLE                                            
+LOGSTDBY$SCN                   TABLE                                            
+LOGSTDBY$SKIP                  TABLE                                            
+LOGSTDBY$SKIP_SUPPORT          TABLE                                            
+LOGSTDBY$SKIP_TRANSACTION      TABLE                                            
+MAJOR2090                      TABLE                                            
+MAJOR_2090_NEW                 TABLE                                            
+MAJOR__2090                    TABLE                                            
+MAJOR__2090_NEW                TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW$_ADV_AJG                 TABLE                                            
+MVIEW$_ADV_BASETABLE           TABLE                                            
+MVIEW$_ADV_CLIQUE              TABLE                                            
+MVIEW$_ADV_ELIGIBLE            TABLE                                            
+MVIEW$_ADV_EXCEPTIONS          TABLE                                            
+MVIEW$_ADV_FILTER              TABLE                                            
+MVIEW$_ADV_FILTERINSTANCE      TABLE                                            
+MVIEW$_ADV_FJG                 TABLE                                            
+MVIEW$_ADV_GC                  TABLE                                            
+MVIEW$_ADV_INFO                TABLE                                            
+MVIEW$_ADV_JOURNAL             TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW$_ADV_LEVEL               TABLE                                            
+MVIEW$_ADV_LOG                 TABLE                                            
+MVIEW$_ADV_OUTPUT              TABLE                                            
+MVIEW$_ADV_PARAMETERS          TABLE                                            
+MVIEW$_ADV_PLAN                TABLE                                            
+MVIEW$_ADV_PRETTY              TABLE                                            
+MVIEW$_ADV_ROLLUP              TABLE                                            
+MVIEW$_ADV_SQLDEPEND           TABLE                                            
+MVIEW$_ADV_TEMP                TABLE                                            
+MVIEW$_ADV_WORKLOAD            TABLE                                            
+MVIEW_EVALUATIONS              VIEW                                             
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+MVIEW_EXCEPTIONS               VIEW                                             
+MVIEW_FILTER                   VIEW                                             
+MVIEW_FILTERINSTANCE           VIEW                                             
+MVIEW_LOG                      VIEW                                             
+MVIEW_RECOMMENDATIONS          VIEW                                             
+MVIEW_WORKLOAD                 VIEW                                             
+OL$                            TABLE                                            
+OL$HINTS                       TABLE                                            
+OL$NODES                       TABLE                                            
+PRODUCT_PRIVS                  VIEW                                             
+PRODUCT_USER_PROFILE           SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+PUBLICSYN                      SYNONYM                                          
+REGESTRATION__2090             TABLE                                            
+REPCAT$_AUDIT_ATTRIBUTE        TABLE                                            
+REPCAT$_AUDIT_COLUMN           TABLE                                            
+REPCAT$_COLUMN_GROUP           TABLE                                            
+REPCAT$_CONFLICT               TABLE                                            
+REPCAT$_DDL                    TABLE                                            
+REPCAT$_EXCEPTIONS             TABLE                                            
+REPCAT$_EXTENSION              TABLE                                            
+REPCAT$_FLAVORS                TABLE                                            
+REPCAT$_FLAVOR_OBJECTS         TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_GENERATED              TABLE                                            
+REPCAT$_GROUPED_COLUMN         TABLE                                            
+REPCAT$_INSTANTIATION_DDL      TABLE                                            
+REPCAT$_KEY_COLUMNS            TABLE                                            
+REPCAT$_OBJECT_PARMS           TABLE                                            
+REPCAT$_OBJECT_TYPES           TABLE                                            
+REPCAT$_PARAMETER_COLUMN       TABLE                                            
+REPCAT$_PRIORITY               TABLE                                            
+REPCAT$_PRIORITY_GROUP         TABLE                                            
+REPCAT$_REFRESH_TEMPLATES      TABLE                                            
+REPCAT$_REPCAT                 TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_REPCATLOG              TABLE                                            
+REPCAT$_REPCOLUMN              TABLE                                            
+REPCAT$_REPGROUP_PRIVS         TABLE                                            
+REPCAT$_REPOBJECT              TABLE                                            
+REPCAT$_REPPROP                TABLE                                            
+REPCAT$_REPSCHEMA              TABLE                                            
+REPCAT$_RESOLUTION             TABLE                                            
+REPCAT$_RESOLUTION_METHOD      TABLE                                            
+REPCAT$_RESOLUTION_STATISTICS  TABLE                                            
+REPCAT$_RESOL_STATS_CONTROL    TABLE                                            
+REPCAT$_RUNTIME_PARMS          TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_SITES_NEW              TABLE                                            
+REPCAT$_SITE_OBJECTS           TABLE                                            
+REPCAT$_SNAPGROUP              TABLE                                            
+REPCAT$_TEMPLATE_OBJECTS       TABLE                                            
+REPCAT$_TEMPLATE_PARMS         TABLE                                            
+REPCAT$_TEMPLATE_REFGROUPS     TABLE                                            
+REPCAT$_TEMPLATE_SITES         TABLE                                            
+REPCAT$_TEMPLATE_STATUS        TABLE                                            
+REPCAT$_TEMPLATE_TARGETS       TABLE                                            
+REPCAT$_TEMPLATE_TYPES         TABLE                                            
+REPCAT$_USER_AUTHORIZATIONS    TABLE                                            
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+REPCAT$_USER_PARM_VALUES       TABLE                                            
+ROOM2090                       TABLE                                            
+ROOM_2090                      TABLE                                            
+ROOM__2090                     TABLE                                            
+SQLPLUS_PRODUCT_PROFILE        TABLE                                            
+STUDENT                        TABLE                                            
+STUDENT_2090                   TABLE                                            
+STUDENT__2090                  TABLE                                            
+SYSCATALOG                     SYNONYM                                          
+SYSFILES                       SYNONYM                                          
+TAB                            SYNONYM                                          
+
+TNAME                          TABTYPE  CLUSTERID                               
+------------------------------ ------- ----------                               
+TABQUOTAS                      SYNONYM                                          
+TERM2090                       TABLE                                            
+TERM_2090                      TABLE                                            
+
+201 rows selected.
+
+SQL> spool off

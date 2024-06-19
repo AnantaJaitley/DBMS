@@ -1,0 +1,125 @@
+SQL> SELECT DISTINCT building FROM LOCATION___2090;
+
+BUILDIN                                                                         
+-------                                                                         
+Gandhi                                                                          
+Kennedy                                                                         
+Nehru                                                                           
+
+SQL>  SELECT CourseId, Section, TermId FROM CRSSECTION___2090 WHERE TermId = 'WN03';
+
+COURSE SE TERM                                                                  
+------ -- ----                                                                  
+CIS265 01 WN03                                                                  
+CIS253 01 WN03                                                                  
+MA150  02 WN03                                                                  
+AC101  10 WN03                                                                  
+
+SQL>  SELECT * FROM FACULTY___2090 WHERE DeptId IN (1, 2);
+
+ FACULTYID NAME                ROOMID PHO     DEPTID                            
+---------- --------------- ---------- --- ----------                            
+       111 Jones                   11 525          1                            
+       222 Williams                20 533          2                            
+       123 Mobley                  11 529          1                            
+       235 Vajpayee                12 577          2                            
+
+SQL>  SELECT StudentID, Last, First, State FROM STUDENT___2090 WHERE State IN ('NY', 'NJ');
+
+STUDE LAST            FIRST           ST                                        
+----- --------------- --------------- --                                        
+00100 Tyler           Micky           NJ                                        
+00101 Diaz            Jose            NY                                        
+00102 Patel           Rajesh          NJ                                        
+00103 Rickles         Deborah         NJ                                        
+00104 Lee             Brian           NY                                        
+00105 Khan            Amir            NJ                                        
+
+6 rows selected.
+
+SQL> SELECT CourseId, Section, MAX(MaxCount) AS MaxCount FROM CRSSECTION___2090 GROUP BY CourseId, Section ORDER BY MaxCount DESC;
+
+COURSE SE   MAXCOUNT                                                            
+------ -- ----------                                                            
+CIS253 11         40                                                            
+CIS253 01         40                                                            
+CIS253 21         40                                                            
+AC101  10         35                                                            
+CIS265 01         35                                                            
+CIS265 02         30                                                            
+LA123  05         30                                                            
+MA150  02         25                                                            
+CIS253 31          2                                                            
+
+9 rows selected.
+
+SQL>  SELECT * FROM COURSE___2090 WHERE PreReq IS NULL OR PreReq = '';
+
+COURSE TITLE                   CREDITS PREREQ                                   
+------ -------------------- ---------- ------                                   
+EN100  Basic English                 0                                          
+CIS253 Database Systems              3                                          
+MA150  College Algebra               3                                          
+AC101  Accounting                    3                                          
+
+SQL> SELECT * FROM FACULTY___2090 ORDER BY DeptId DESC, Name;
+
+ FACULTYID NAME                ROOMID PHO     DEPTID                            
+---------- --------------- ---------- --- ----------                            
+       555 Chang                   17 587          5                            
+       444 Rivera                  21 544          4                            
+       333 Collins                 17 599          3                            
+       345 Sen                     12 579          3                            
+       235 Vajpayee                12 577          2                            
+       222 Williams                20 533          2                            
+       111 Jones                   11 525          1                            
+       123 Mobley                  11 529          1                            
+
+8 rows selected.
+
+SQL> SELECT StudentID, Last, First, StartTerm FROM STUDENT___2090 WHERE StartTerm LIKE '%03';
+
+STUDE LAST            FIRST           STAR                                      
+----- --------------- --------------- ----                                      
+00100 Tyler           Micky           WN03                                      
+00101 Diaz            Jose            SP03                                      
+00102 Patel           Rajesh          WN03                                      
+00104 Lee             Brian           WN03                                      
+00105 Khan            Amir            WN03                                      
+
+SQL>  SELECT COUNT(*) FROM LOCATION___2090;
+
+  COUNT(*)                                                                      
+----------                                                                      
+        11                                                                      
+
+SQL>  SELECT AVG(MONTHS_BETWEEN(SYSDATE, Birthday) / 12) AS average_age, MAX(MONTHS_BETWEEN(SYSDATE, Birthday) / 12) AS max_age, MIN(MONTHS_BETWEEN(SYSDATE, Birthday) / 12) AS min_age FROM STUDENT___2090;
+
+AVERAGE_AGE    MAX_AGE    MIN_AGE                                               
+----------- ---------- ----------                                               
+ 41.7986636 53.4137727 38.2686114                                               
+
+SQL>  SELECT CourseId, CASE WHEN PreReq IS NULL THEN 'None' ELSE 'One' END AS Prerequisite FROM COURSE___2090;
+
+COURSE PRER                                                                     
+------ ----                                                                     
+EN100  None                                                                     
+LA123  One                                                                      
+CIS253 None                                                                     
+CIS265 One                                                                      
+MA150  None                                                                     
+AC101  None                                                                     
+
+6 rows selected.
+
+SQL> SELECT Last, First, TO_CHAR(Birthday, 'MM-DD-YY') AS Birthdate  FROM STUDENT___2090  WHERE EXTRACT(MONTH FROM Birthday) = 7;
+
+LAST            FIRST           BIRTHDAT                                        
+--------------- --------------- --------                                        
+Khan            Amir            07-07-84                                        
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL>  SPOOL OFF;

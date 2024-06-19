@@ -1,0 +1,96 @@
+SQL>  CREATE VIEW Stud___2090 AS SELECT studentid, first, last, phone from Student___2090;
+ CREATE VIEW Stud___2090 AS SELECT studentid, first, last, phone from Student___2090
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL>  CREATE VIEW Student___2090 AS SELECT studentid, first, last, phone from Student___2090;
+ CREATE VIEW Student___2090 AS SELECT studentid, first, last, phone from Student___2090
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL>  CREATE VIEW CRS___2090 AS SELECT * FROM Crssection___2090 where Section = 02;
+
+View created.
+
+SQL>  select * from CRS___2090;
+
+      CSID COURSE SE TERM  FACULTYID DA START ENDTI     ROOMID   MAXCOUNT       
+---------- ------ -- ---- ---------- -- ----- ----- ---------- ----------       
+      1103 MA150  02 WN03        444 F  09:00 12:00         15         25       
+      1206 CIS265 02 SP03        111 TR 09:00 10:30         18         30       
+
+SQL>  Create VIEW Fac___2090 AS SELECT name, phone, deptname, building from faculty___2090 natural join department___2090 natural join location___2090;
+
+View created.
+
+SQL>  select * from Fac___2090;
+
+NAME            PHO DEPTNAME             BUILDIN                                
+--------------- --- -------------------- -------                                
+Jones           525 Computer Science     Gandhi                                 
+Collins         599 Accounting           Gandhi                                 
+Chang           587 Liberal Arts         Gandhi                                 
+Williams        533 Telecommunications   Gandhi                                 
+Rivera          544 Math and Science     Gandhi                                 
+
+SQL>  Create view Room_details___2090 As select * from location___2090;
+
+View created.
+
+SQL>  select * from Room_details___2090;
+
+    ROOMID BUILDIN ROO   CAPACITY R                                             
+---------- ------- --- ---------- -                                             
+        11 Gandhi  101          2 O                                             
+        12 Gandhi  103          2 O                                             
+        13 Kennedy 202         35 L                                             
+        14 Kennedy 204         50 L                                             
+        15 Nehru   301         50 C                                             
+        16 Nehru   309         45 C                                             
+        17 Gandhi  105          2 O                                             
+        18 Kennedy 206         40 L                                             
+        19 Kennedy 210         30 L                                             
+        20 Gandhi  107          2 O                                             
+        21 Gandhi  109          2 O                                             
+
+11 rows selected.
+
+SQL>  Insert Into Room_Details___2090 (RoomId, Building, RoomNo, capacity, Roomtype)Values(22, 'Adonis', 201, 40, 'C');
+
+1 row created.
+
+SQL>  Create Index index_majorid on Student___2090 (MajorId);
+
+Index created.
+
+SQL>  Create sequence room_id_seq;
+
+Sequence created.
+
+SQL>  INSERT INTO Location___2090 VALUES(room_id_seq.NEXTVAL,'Ray', 199 , 40 , 'O');
+
+1 row created.
+
+SQL>  SELECT room_id_seq.CURRVAL FROM DUAL;
+
+   CURRVAL                                                                      
+----------                                                                      
+         1                                                                      
+
+SQL>   CREATE USER DBMS IDENTIFIED BY dbms;
+
+User created.
+
+SQL>  Grant Select on Term___2090 to DBMS;
+
+Grant succeeded.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> spool off

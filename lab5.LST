@@ -1,0 +1,84 @@
+SQL> SELECT t.TermID,c.CourseID,SUM(crs.MaxCount) AS TotalMaxCount FROM COURSE___2090 c INNER JOIN CRSSECTION___2090 crs ON c.CourseID = crs.CourseID INNER JOIN TERM_2090 t ON crs.TermID = t.TermID GROUP BY c.CourseID, t.TermID ORDER BY c.CourseID, t.TermID;
+SELECT t.TermID,c.CourseID,SUM(crs.MaxCount) AS TotalMaxCount FROM COURSE___2090 c INNER JOIN CRSSECTION___2090 crs ON c.CourseID = crs.CourseID INNER JOIN TERM_2090 t ON crs.TermID = t.TermID GROUP BY c.CourseID, t.TermID ORDER BY c.CourseID, t.TermID
+                                                                                                                                                            *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> SELECT t.TermID,c.CourseID,SUM(crs.MaxCount) AS TotalMaxCount FROM COURSE___2090 c INNER JOIN CRSSECTION___2090 crs ON c.CourseID = crs.CourseID INNER JOIN TERM___2090 t ON crs.TermID = t.TermID GROUP BY c.CourseID, t.TermID ORDER BY c.CourseID, t.TermID;
+
+TERM COURSE TOTALMAXCOUNT                                                       
+---- ------ -------------                                                       
+WN03 AC101             35                                                       
+SP03 CIS253            82                                                       
+WN03 CIS253            40                                                       
+SP03 CIS265            65                                                       
+WN03 CIS265            30                                                       
+SP03 LA123             30                                                       
+WN03 MA150             25                                                       
+
+7 rows selected.
+
+SQL>  SELECT Last,First, MajorDesc FROM STUDENT___2090 JOIN MAJOR___2090 ON STUDENT___2090.MajorID=MAJOR___2090.MajorID;
+
+LAST            FIRST           MAJORDESC                                       
+--------------- --------------- -------------------------                       
+Tyler           Micky           AAS-Accounting                                  
+Khan            Amir            AAS-Computer Science                            
+Patel           Rajesh          BS-Accounting                                   
+Rickles         Deborah         BS-Computer Science                             
+Diaz            Jose            BS-Computer Science                             
+Lee             Brian           BS-Telecommunications                           
+
+6 rows selected.
+
+SQL> SELECT STUDENT___2090.Last, STUDENT___2090.First, CRSSECTION___2090.CourseID, CRSSECTION___2090.Section,REGESTRATION___2090.Final FROM STUDENT___2090 JOIN REGESTRATION___2090 ON STUDENT___2090.StudentID = REGESTRATION___2090.StudentID JOIN CRSSECTION___2090 ON REGESTRATION___2090.CsID = CRSSECTION___2090.CsID WHERE REGESTRATION___2090.Final ='F' AND CRSSECTION___2090.TermID='WN03';
+
+LAST            FIRST           COURSE SE F                                     
+--------------- --------------- ------ -- -                                     
+Tyler           Micky           MA150  02 F                                     
+
+SQL>  SELECT s.Last, s.First, f.Name, l.Building || ' ' || l.RoomNo AS OfficeLocation FROM STUDENT___2090 s INNER JOIN FACULTY___2090 f ON s.FacultyID =f.FacultyID INNER JOIN LOCATION___2090 l ON f.RoomID = l.RoomID;
+
+LAST            FIRST           NAME            OFFICELOCAT                     
+--------------- --------------- --------------- -----------                     
+Tyler           Micky           Mobley          Gandhi 101                      
+Patel           Rajesh          Jones           Gandhi 101                      
+Lee             Brian           Sen             Gandhi 103                      
+Diaz            Jose            Chang           Gandhi 105                      
+Rickles         Deborah         Chang           Gandhi 105                      
+Khan            Amir            Williams        Gandhi 107                      
+
+6 rows selected.
+
+SQL>  SELECT c.Title, COALESCE(p.Title, 'None') AS Prerequisite FROM COURSE___2090 c LEFT JOIN COURSE___2090 p ON c.PreReq = p.CourseID ORDER BY c.Title;
+
+TITLE                PREREQUISITE                                               
+-------------------- --------------------                                       
+Accounting           None                                                       
+Basic English        None                                                       
+College Algebra      None                                                       
+Database Systems     None                                                       
+English Literature   Basic English                                              
+Systems Analysis     Database Systems                                           
+
+6 rows selected.
+
+SQL>  SELECT cs.CourseID, cs.Section, COALESCE(f.Name, ' ') AS FacultyName FROM CRSSECTION___2090 cs LEFT JOIN FACULTY___2090 f ON cs.FacultyID =f.FacultyID WHERE cs.TermID='SP03';
+
+COURSE SE FACULTYNAME                                                           
+------ -- ---------------                                                       
+CIS253 11 Jones                                                                 
+CIS265 02 Jones                                                                 
+CIS253 31 Mobley                                                                
+CIS253 21 Mobley                                                                
+LA123  05                                                                       
+CIS265 01                                                                       
+
+6 rows selected.
+
+SQL>  COMMIT;
+
+Commit complete.
+
+SQL>  SPOOL OFF;

@@ -1,0 +1,47 @@
+SQL>  SELECT f.Name, f.Phone FROM FACULTY___2090 f JOIN STUDENT___2090 s ON f.FacultyID = s.FacultyID WHERE s.Last ='Diaz' AND s.First = 'Jose';
+
+NAME            PHO                                                             
+--------------- ---                                                             
+Chang           587                                                             
+
+SQL>  SELECT RoomRank, Building, RoomNo, Capacity FROM (SELECT RANK() OVER (ORDER BY L.Capacity ASC) AS RoomRank,L.Building,L.RoomNo,   L.Capacity FROM LOCATION___2090 L JOIN ROOM___2090 R ON L.RoomType = R.RoomType WHERE R.RoomType != 'O')WHERE RoomRank <= 2;
+
+  ROOMRANK BUILDIN ROO   CAPACITY                                               
+---------- ------- --- ----------                                               
+         1 Kennedy 210         30                                               
+         2 Kennedy 202         35                                               
+
+SQL>  SELECT * FROM (SELECT ROWNUM AS Ranking, CS.CourseID, CS.Section, CS.MaxCount FROM CRSSECTION___2090 CS JOIN TERM___2090 T ON CS.TermID = T.TermID WHERE T.TermDesc = 'Spring 2003' ORDER BY CS.MaxCount DESC) WHERE ROWNUM <= 3;
+
+   RANKING COURSE SE   MAXCOUNT                                                 
+---------- ------ -- ----------                                                 
+         4 CIS253 21         40                                                 
+         5 CIS253 11         40                                                 
+         1 CIS265 01         35                                                 
+
+SQL>   SELECT * FROM LOCATION___2090 L WHERE L.RoomType = 'C';
+
+    ROOMID BUILDIN ROO   CAPACITY R                                             
+---------- ------- --- ---------- -                                             
+        15 Nehru   301         50 C                                             
+        16 Nehru   309         45 C                                             
+        22 Adonis  201         40 C                                             
+
+SQL> SELECT * FROM SP03SECT;
+
+COURSE SE  FACULTYID     ROOMID                                                 
+------ -- ---------- ----------                                                 
+CIS265 01                    14                                                 
+CIS265 02        111         18                                                 
+LA123  05                    15                                                 
+CIS253 11        111         18                                                 
+
+SQL>  DELETE FROM SP03SECT WHERE FacultyId = (SELECT FacultyID FROM FACULTY___2090 WHERE Name = 'Mobley');
+
+0 rows deleted.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> spool off;

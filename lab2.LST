@@ -1,0 +1,137 @@
+SQL> CREATE TABLE Employees(EmployeeID NUMBER(3),Lname VARCHAR2(15),Fname VARCHAR2(15), HireDate DATE,Salary NUMBER(10,2));
+
+Table created.
+
+SQL> DESCRIBE Employees
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEEID                                         NUMBER(3)
+ LNAME                                              VARCHAR2(15)
+ FNAME                                              VARCHAR2(15)
+ HIREDATE                                           DATE
+ SALARY                                             NUMBER(10,2)
+
+SQL> INSERT INTO Employees VALUES(300,'Jaitley','Ananta','10-Feb-2023',250000);
+
+1 row created.
+
+SQL> INSERT INTO Employees VALUES(301,'Kandhari','Kashish','25-Feb-2023',200000);
+
+1 row created.
+
+SQL> INSERT INTO Employees VALUES(302,'Nema','Anwesha','18-Nov-2023',100000);
+
+1 row created.
+
+SQL> INSERT INTO Employees VALUES(303,'Parashar','Anandita','22-Jan-2023',150000);
+
+1 row created.
+
+SQL> INSERT INTO Employees VALUES(304,'Singh','Ankita','11-Jan-2023',125000);
+
+1 row created.
+
+SQL> INSERT INTO Employees VALUES(305,'Varshney','Manvi','18-Aug-2023',50000);
+
+1 row created.
+
+SQL> SELECT * FROM Employees;
+
+EMPLOYEEID LNAME           FNAME           HIREDATE      SALARY                 
+---------- --------------- --------------- --------- ----------                 
+       300 Jaitley         Ananta          10-FEB-23     250000                 
+       301 Kandhari        Kashish         25-FEB-23     200000                 
+       302 Nema            Anwesha         18-NOV-23     100000                 
+       303 Parashar        Anandita        22-JAN-23     150000                 
+       304 Singh           Ankita          11-JAN-23     125000                 
+       305 Varshney        Manvi           18-AUG-23      50000                 
+
+6 rows selected.
+
+SQL> ALTER TABLE Employees ADD(CITY VARCHAR2(15));
+
+Table altered.
+
+SQL> DESC Employees;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEEID                                         NUMBER(3)
+ LNAME                                              VARCHAR2(15)
+ FNAME                                              VARCHAR2(15)
+ HIREDATE                                           DATE
+ SALARY                                             NUMBER(10,2)
+ CITY                                               VARCHAR2(15)
+
+SQL> UPDATE Employees SET CITY = 'Agra' WHERE Fname='Ananta';
+
+1 row updated.
+
+SQL> UPDATE Employees SET CITY = 'Agra' WHERE Fname='Kashish';
+
+1 row updated.
+
+SQL> UPDATE Employees SET CITY = 'Jharsuguda' WHERE Fname='Anwesha';
+
+1 row updated.
+
+SQL> UPDATE Employees SET CITY = 'Vadodra' WHERE Fname='Anandita';
+
+1 row updated.
+
+SQL> UPDATE Employees SET CITY = 'Patna' WHERE Fname='Ankita';
+
+1 row updated.
+
+SQL> UPDATE Employees SET CITY = 'Delhi' WHERE Fname='Manvi';
+
+1 row updated.
+
+SQL> SELECT * FROM Employees;
+
+EMPLOYEEID LNAME           FNAME           HIREDATE      SALARY CITY            
+---------- --------------- --------------- --------- ---------- --------------- 
+       300 Jaitley         Ananta          10-FEB-23     250000 Agra            
+       301 Kandhari        Kashish         25-FEB-23     200000 Agra            
+       302 Nema            Anwesha         18-NOV-23     100000 Jharsuguda      
+       303 Parashar        Anandita        22-JAN-23     150000 Vadodra         
+       304 Singh           Ankita          11-JAN-23     125000 Patna           
+       305 Varshney        Manvi           18-AUG-23      50000 Delhi           
+
+6 rows selected.
+
+SQL> UPDATE Employees SET CITY = 'Mumbai' WHERE CITY='Agra';
+
+2 rows updated.
+
+SQL> SELECT * FROM Employees;
+
+EMPLOYEEID LNAME           FNAME           HIREDATE      SALARY CITY            
+---------- --------------- --------------- --------- ---------- --------------- 
+       300 Jaitley         Ananta          10-FEB-23     250000 Mumbai          
+       301 Kandhari        Kashish         25-FEB-23     200000 Mumbai          
+       302 Nema            Anwesha         18-NOV-23     100000 Jharsuguda      
+       303 Parashar        Anandita        22-JAN-23     150000 Vadodra         
+       304 Singh           Ankita          11-JAN-23     125000 Patna           
+       305 Varshney        Manvi           18-AUG-23      50000 Delhi           
+
+6 rows selected.
+
+SQL> DELETE FROM Employees WHERE CITY='Patna';
+
+1 row deleted.
+
+SQL> SELECT * FROM Employees;
+
+EMPLOYEEID LNAME           FNAME           HIREDATE      SALARY CITY            
+---------- --------------- --------------- --------- ---------- --------------- 
+       300 Jaitley         Ananta          10-FEB-23     250000 Mumbai          
+       301 Kandhari        Kashish         25-FEB-23     200000 Mumbai          
+       302 Nema            Anwesha         18-NOV-23     100000 Jharsuguda      
+       303 Parashar        Anandita        22-JAN-23     150000 Vadodra         
+       305 Varshney        Manvi           18-AUG-23      50000 Delhi           
+
+SQL> DROP TABLE Employees;
+
+Table dropped.
+
+SQL> SPOOL off;
